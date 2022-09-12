@@ -1,0 +1,254 @@
+@import '../base/variables.less';
+
+.commingSoon-modal {
+    &-header {
+        padding: 22px 26px;
+        color: black;
+        font-size: 20px;
+        border-radius: 12px 12px 0 0;
+        font-family: Nunito;
+        font-size: 40px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.36;
+        letter-spacing: 0.42px;
+        text-align: center;
+        color: #1a93f1;
+        margin: 36px 0px 0px 0px;
+    }
+
+
+    button {
+        width: 90%;
+        margin: -3px 10px 25px 0;
+        background-color: #1a93f1;
+        font-family: Nunito;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .popupPara p {
+        margin: 15px -18px 22px -11px;
+        font-family: Nunito;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000;
+    }
+
+    img.cancelBtnIMG {
+        margin: -26px 0px 0px 498px;
+    }
+
+
+    &-body {
+        padding: 20px 50px 30px;
+        background: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+        &>div {
+            flex-basis: 48%;
+            margin-bottom: 15px;
+        }
+
+        .input-wrapper .password-eye {
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .input.input-wrapper {
+
+            label {
+                font-size: 12px;
+                font-weight: 600;
+                color: #26265d;
+                margin-left: 39px;
+                margin-top: 10px;
+            }
+
+            input {
+                border: 1px solid #c5cbde;
+                margin-top: 6px !important;
+                width: 455px;
+                position: relative;
+                height: 45px;
+                left: 35px;
+            }
+        }
+
+        .SingleSelect {
+            label {
+                font-size: 12px;
+                font-weight: 600;
+                color: #26265d;
+                margin-left: 2px;
+            }
+
+            ._single-select {
+                margin-top: 6px !important;
+
+                &__control {
+                    border: 1px solid #c5cbde !important;
+                }
+
+                &__placeholder {
+                    color: #c3c8d0;
+                }
+            }
+        }
+
+        label {
+            display: block;
+            color: #26265d;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 2px;
+        }
+
+        .ant-switch {
+            margin-top: 5px;
+            min-width: 60px;
+            height: 25px;
+
+            &::after {
+                top: 2px;
+            }
+
+            &-checked {
+                background-color: green !important;
+            }
+        }
+
+        .trash {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    &-body.oneThird {
+        &>div {
+            flex-basis: 65%;
+        }
+    }
+
+    &-footer {
+        border-radius: 0 0 12px 12px;
+        padding: 22px 50px;
+        border-top: 1px solid #c5cbde;
+        background-color: white;
+        border: none;
+
+        &__btns {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+
+    }
+
+    .ant-modal {
+        &-content {
+            // border-radius: 12px;
+            background: none;
+            background-repeat: no-repeat;
+            width: 1106px;
+            position: relative;
+            left: -229px;
+            box-shadow: none;
+
+        }
+
+        &-close {
+            display: none;
+        }
+
+        &-body {
+            padding: 0;
+            border-radius: 12px;
+            width: 55%;
+            margin-left: 200px;
+        }
+    }
+}
+
+.ant-popover-inner-content {
+    ul {
+        list-style: none;
+    }
+}
+
+.ant-popover-inner {
+    padding: 0;
+}
+
+.ant-popover-placement-top {
+    .ant-popover-inner {
+        padding: 6px 15px !important;
+    }
+}
+
+.ant-notification-notice.ant-notification-notice-closable {
+    border-radius: 7.5px !important;
+    background-color: #09cc64 !important;
+    color: white !important;
+}
+
+.ant-notification-notice-message {
+    color: white !important;
+
+    .ant-notification-notice-icon-success {
+        svg {
+            path {
+                fill: white;
+            }
+        }
+    }
+}
+h5.signUpTitle {
+    width: 592px;
+    height: 52px;
+    margin: 33px 0px 13px -11px;
+    font-family: Nunito;
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: 0.42px;
+    text-align: center;
+    color: #1a93f1;
+}
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+
+    }
+
+   
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        border: 2px solid;
+        padding: 10px;
+    }
+
+}

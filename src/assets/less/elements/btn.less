@@ -1,0 +1,51 @@
+@import '../base/variables.less';
+
+button {
+    border-radius: 6px;
+    border: 1.5px solid @primaryColor;
+    height: 36px;
+    min-width: 101px;
+    margin-left: 10px;
+    font-weight: 500 !important;
+    transition: all 0.2s ease-in;
+
+    &[type="button"].primary {
+        color: white;
+        background-color: @primaryColor;
+
+        &:hover {
+            color: white;
+            background-color: @primaryColor;
+        }
+    }
+
+    &[type="reset"] {
+        background-color: transparent !important;
+    }
+
+    &[type="button"] {
+        color: @primaryColor;
+        background-color: transparent;
+
+        &:disabled {
+            cursor: not-allowed;
+        }
+    }
+
+    &[type="submit"] {
+        color: white;
+        min-width: 101px;
+        background: @primaryColor;
+    }
+
+    &[type="button"].delete,
+    &[type="submit"].delete  {
+        background: red;
+        color: white;
+        border-color: red;
+    }
+
+    &.ant-switch {
+        background: grey;
+    }
+}

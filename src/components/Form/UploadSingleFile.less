@@ -1,0 +1,147 @@
+@import '../../assets/less/base/colors.less';
+
+.ImageFileUploadsection {
+    margin-bottom: 20px;
+
+    #SingleFileUpload {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 46px;
+        margin-bottom: 7px;
+        margin-right: 40px;
+        padding-right: 0px;
+
+        span {
+            margin-left: -10px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #26265d;
+            margin-left: 2px;
+        }
+
+        .field-container_fieldname {
+            padding: 2px;
+            padding-bottom: 10px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            // font-family: @font-family5;
+        }
+
+        .fileUpladContainer {
+            // border: dashed 1px #ced2d5;
+            // margin: 10px 0 10px !important;
+
+            #fileLabel {
+                // background-color: #f9fbff;
+                display: block;
+                padding: 8px 0px;
+                font-size: 12px;
+                position: relative;
+                margin-bottom: 0;
+                text-align: center;
+                color: white;
+                background: #5964ff;
+                width: 86px;
+                border-radius: 6px;
+                height: 34px;
+
+                &::after,
+                &::before {
+                    content: "";
+                    position: absolute !important;
+                    top: 0 !important;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: #efefef;
+                    z-index: -1;
+                }
+            }
+
+            #filesToUpload {
+                display: none;
+            }
+
+            #filesToUploadImages {
+                display: none;
+            }
+        }
+
+        .fileListContainer {
+            display: flex;
+            flex-direction: column;
+            color: #a5a9ac;
+
+            .FileListItem {
+                padding: 5px 10px;
+                display: flex;
+                margin-top: 3px;
+                font-size: 12px;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border: #ced2d5 solid 1px;
+                font-weight: 500;
+                flex-grow: 1;
+                color: #a5a9ac;
+
+                &-label {
+                    flex: 1;
+                    color: black;
+                }
+
+                &-removeBtn {
+                    color: #921919;
+                    cursor: pointer;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    .preview {
+        // padding: 10px;
+
+        .withimage {
+
+            .text {
+                padding: 5px;
+
+                display: flex;
+                // justify-content: flex-end;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-left: 100px;
+
+                .previewimage {
+                    img {
+                        width: 30px
+                    }
+                }
+
+                .buttonsection {
+                    // padding-right: 40px;
+                    display: flex;
+                    margin-top: -23px;
+                    // align-items: center;
+
+                    .name {
+                        color: black;
+                        width: 340px;
+                    }
+
+                    .clearbutton {
+                        color: #000;
+                        padding: 5px;
+                        margin-top: -5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+    }
+}

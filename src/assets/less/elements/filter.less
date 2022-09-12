@@ -1,0 +1,135 @@
+@import '../base/variables.less';
+
+.filter {
+    background-color: #fafafa;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0 0;
+    border-radius: 8px;
+
+    &>div {
+        flex-basis: 30%;
+    }
+
+    .dashedBorder {
+        padding: 20px;
+        border: 1px dashed #8692ac;
+        background-color: white;
+        flex-direction: row;
+        display: flex;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 10px 0 20px;
+    }
+
+    .input.input-wrapper {
+        label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #26265d;
+            margin-left: 2px;
+        }
+
+        input {
+            border: 1px solid #c5cbde;
+            margin-top: 6px !important;
+        }
+    }
+
+    .InputTextArea.InputTextArea-wrapper {
+        label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #26265d;
+            margin-left: 2px;
+        }
+
+        textarea {
+            border-radius: 8px !important;
+            border: 1px solid #c5cbde;
+            margin-top: 6px !important;
+        }
+    }
+
+    .inputDate.inputDate-wrapper {
+        label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #26265d;
+            margin-left: 2px;
+        }
+
+        input {
+            border: 1px solid #c5cbde;
+            margin-top: 6px !important;
+        }
+
+    }
+
+    .SingleSelect {
+        label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #26265d;
+            margin-left: 2px;
+        }
+
+        ._single-select {
+            margin-top: 6px !important;
+
+            &__control {
+                border: 1px solid #c5cbde !important;
+            }
+
+            &__placeholder {
+                color: #c3c8d0;
+            }
+        }
+    }
+
+
+
+    &-btns {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-bottom: 5px;
+        height: 70px;
+
+        button {
+            border-radius: 6px;
+            border: 1.5px solid @primaryColor;
+            height: 36px;
+            margin-left: 10px;
+            width: 110px;
+
+            &[type="reset"] {
+                color: @primaryColor;
+                background-color: transparent;
+            }
+
+            &[type="submit"] {
+                color: white;
+                background: @primaryColor;
+            }
+
+            &[type="button"].default {
+                color: @primaryColor;
+                background: transparent;
+            }
+
+            &[type="button"].danger {
+                color: white;
+                background: #ff5151;
+                border: 1.5px solid #ff5151;
+            }
+        }
+    }
+}

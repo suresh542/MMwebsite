@@ -1,0 +1,174 @@
+@inputHeight: 70px;
+@inputBorderColor: #c5cbde;
+@error: red;
+@labelFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@inputFieldHeight: 38px;
+@labelFontSize: 12px;
+@labelColor: '#000';
+@inputBackgroundColor: #fff;
+
+.input {
+    height: @inputHeight;
+    position: relative;
+
+    &-wrapper {
+        position: relative;
+        height: @inputHeight;
+
+        label {
+            color: @labelColor;
+            font-family: @labelFont;
+            font-size: @labelFontSize;
+            line-height: 16px;
+        }
+
+        input {
+            box-sizing: border-box;
+            height: @inputFieldHeight;
+            border-radius: 4px;
+            background-color: @inputBackgroundColor;
+            border: 1px solid @inputBorderColor;
+            margin-top: 2px;
+
+            .ant-input {
+                background: white !important;
+            }
+
+        }
+
+        .password-eye {
+            position: absolute;
+            top: 28px;
+            right: 10px;
+            cursor: pointer;
+
+        }
+    }
+}
+
+.SingleSelect {
+    label {
+        color: @labelColor;
+        font-family: @labelFont;
+        font-size: @labelFontSize;
+        line-height: 16px;
+        font-weight: 600;
+    }
+
+    ._single-select {
+        margin-top: 2px;
+
+        &__placeholder {
+            color: #bcbcbc;
+        }
+
+        &__control {
+            border-color: @inputBorderColor  !important;
+        }
+
+        &__menu {
+            z-index: 999 !important;
+        }
+    }
+}
+
+.InputTextArea {
+    label {
+        color: @labelColor;
+        font-family: @labelFont;
+        font-size: @labelFontSize;
+        line-height: 16px;
+    }
+
+    .ant-input-affix-wrapper {
+        padding: 0 !important;
+        margin-top: 2px;
+    }
+}
+
+.switch {
+    height: 75px;
+
+    &-wrapper {
+        display: block;
+    }
+
+    label {
+        color: @labelColor;
+        font-family: @labelFont;
+        font-size: @labelFontSize;
+        line-height: 16px;
+        font-weight: 600;
+        display: block;
+    }
+
+    .ant-switch {
+        margin-top: 10px;
+    }
+
+    .ant-switch-checked {
+        background-color: green;
+    }
+}
+
+.radio-wrapper {
+    height: 75px;
+    display: block;
+
+    label {
+        color: @labelColor;
+        font-family: @labelFont;
+        font-size: @labelFontSize;
+        line-height: 16px;
+        font-weight: 600;
+        display: block;
+    }
+
+    .ant-radio-group {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+
+        &>div {
+            flex-basis: 25%;
+        }
+    }
+}
+
+.inputDate {
+    height: 75px;
+
+    label {
+        color: @labelColor;
+        font-family: @labelFont;
+        font-size: @labelFontSize;
+        line-height: 16px;
+        font-weight: 600 !important;
+    }
+
+    .ant-calendar-picker {
+        margin-top: 2px;
+        width: 100%;
+
+        input {
+            box-sizing: border-box;
+            height: @inputFieldHeight;
+            border-radius: 4px;
+            background-color: @inputBackgroundColor;
+            border: 1px solid @inputBorderColor;
+            margin-top: 2px;
+        }
+    }
+
+    .ant-input:disabled {
+        background-color: #f5f5f5 !important;
+    }
+}
+
+.error_message {
+    color: @error;
+}
+
+.disabledselect {
+    cursor: not-allowed;
+}
